@@ -69,7 +69,8 @@ small,
 }
 .notp__container {
   height: auto;
-  background-color: rgba(255, 217, 0, 0.1);
+  /* background-color: rgba(255, 217, 0, 0.1); */
+  background-color: rgb(233,236,240);
 }
 .notp__header > h2 {
   margin: 0;
@@ -174,7 +175,8 @@ small,
   width: 100%;
   height: 50px;
   text-align: center;
-  background-color: rgba(68, 59, 5, 0.911);
+  /* background-color: rgba(68, 59, 5, 0.911); */
+  background-color: rgba(4, 8, 32, 0.952);
 }
 .notp__footer h5 {
   line-height: 50px;
@@ -193,4 +195,8 @@ small,
   .notp__dieuhuong {
   margin-top: 0px;
   }
+}
+a{
+  text-decoration: none;
+  color: white;
 }
