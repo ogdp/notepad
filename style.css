@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  color: #000000;
+} /*16px*/
+:root {
+  --font-weight: 100;
+} 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.75;
+}
+h1 {
+  font-weight: 600 !important;
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+h2 {
+  font-weight: 600 !important;
+
+  font-size: 2.441rem;
+}
+h3 {
+  font-weight: 600 !important;
+
+  font-size: 1.953rem;
+}
+h4 {
+  font-weight: 600 !important;
+  font-size: 1.563rem;
+}
+h5 {
+  font-weight: 500 !important;
+  font-size: 1.25rem;
+}
+h6 {
+  font-weight: 500 !important;
+  font-size: 1.15rem;
+}
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+.top__noti__notp {
+  width: 100%;
+  padding: 0 10%;
+  background-color: rgba(4, 8, 32, 0.952);
+  line-height: 30px;
+}
+.top__noti__notp marquee {
+  margin: 0;
+  padding-top: 10px;
+  color: white;
+  
+}
+.notp__container {
+  height: auto;
+  background-color: rgba(255, 217, 0, 0.1);
+}
+.notp__header > h2 {
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+.notp__content__99ks{
+  min-height: 72.8vh;
+}
+.notp__dieuhuong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.notp__dieuhuong div:not(:first-child) {
+  margin-left: 1vw;
+}
+#change__size__font,
+#slect__font,
+#bold__noidung,
+#remove__noidung,
+#reset__noidung {
+  margin-top: 5px;
+}
+#bold__noidung,
+#remove__noidung,
+#reset__noidung {
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 6px;
+}
+#remove__noidung:hover {
+  background-color: rgb(255, 7, 7, 0.7);
+  cursor: pointer;
+}
+#reset__noidung:hover {
+  background-color: rgba(221, 167, 4, 1);
+  cursor: pointer;
+}
+#bold__noidung:hover {
+  background-color: rgba(184, 177, 214, 0.938);
+  cursor: pointer;
+}
+#bold__noidung {
+  color: rgb(15, 66, 2);
+  font-weight: 600;
+  background-color: rgba(184, 177, 214, 0.438);
+}
+#reset__noidung {
+  background-color: rgb(155, 118, 9);
+  color: white;
+  font-weight: 600;
+}
+#remove__noidung {
+  background-color: rgb(255, 7, 7);
+  color: white;
+  font-weight: 600;
+}
+.slect__size,
+.slect__font {
+  height: 40px;
+  font-size: 1rem;
+  max-width: 130px;
+  padding: 0 5px;
+}
+.slect__size option,
+.slect__font option {
+  font-size: 1rem;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+.content .content-words {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  border-color: aliceblue;
+  resize: none;
+  padding: 10px 12px;
+  height: 60vh;
+  border-color: rgb(10, 6, 219, 0.1);
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.content .content-words:focus {
+  outline: none;
+  border-color: rgb(10, 6, 219, 0.5);
+}
+#content-words {
+  font-size: 18px;
+}
+
+.notp__footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(68, 59, 5, 0.911);
+}
+.notp__footer h5 {
+  line-height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .notp__header > h2 {
+    font-size: 1.5rem;
+  }
+  .notp__dieuhuong {
+  margin-top: 0px;
+  }
+}

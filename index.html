@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notp__container"> 
+        <div class="notp__header">
+            <div class="top__noti__notp">
+                <marquee  behavior="alternate">&emsp;&emsp;Developer font-end website Lê Quang Minh Đức&emsp;&emsp;</marquee>
+            </div>
+            <h2>Chào mừng bạn đến với Notepad nhà tự trồng</h2>
+        </div>
+        <main class="notp__content__99ks">
+            <div class="notp__dieuhuong">
+                <div>
+                    <select id="slect__font" class="slect__font" name="" id="" onchange="font__family__select(this)">
+                        <option  value="" disabled selected>Font Family</option>
+                        <option value="Arial, Helvetica, sans-serif">Arial</option>
+                        <option value="Times New Roman, Times, serif">Times New Roman</option>
+                        <option value="Courier New, Courier, monospace">Courier New</option>
+                        <option value="Poppins, sans-serif">Poppins</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="slect__size" name="" id="change__size__font" onchange="size__font__select(this)">
+                        <option value="" disabled selected>Size</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                        <option value="30">30</option>
+                        <option value="32">32</option>
+                        <option value="38">38</option>
+                        <option value="42">42</option>
+                        <option value="46">46</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="bold__noidung" onclick="bold__words()">BOLD</button>
+                </div>
+                <div>
+                    <button id="reset__noidung" onclick="reset__words()">RESET</button>
+                </div>
+                <div>
+                    <button onclick="remove__content_words()" id="remove__noidung">REMOVE</button>
+                </div>
+            </div>
+            <div class="content">
+                <textarea  placeholder="Nội dung cần nhập..." class="content-words" name="content-words" id="content-words" cols="" rows=""></textarea>
+            </div>
+        </main>
+        <footer class="notp__footer">
+            <h5>&copy; Lê Quang Minh Đức </h5>
+        </footer>
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
