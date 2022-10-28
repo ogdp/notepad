@@ -103,8 +103,8 @@ small,
 #bold__noidung,
 #remove__noidung,
 #reset__noidung {
-  height: 40px;
-  padding: 0 10px;
+  /* height: 40px; */
+  padding: 10px 10px;
   border: none;
   border-radius: 6px;
 }
@@ -190,11 +190,27 @@ small,
 }
 @media screen and (max-width: 980px) {
   .notp__header > h2 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .notp__dieuhuong {
   margin-top: 0px;
   }
+  #content-words {
+    font-size: 14px;
+  }
+  .notp__siz__poe{
+    font-size: 14px !important;
+  }
+  .slect__size,
+  .slect__font {
+  height: auto;
+  padding: 4px 5px;
+  }
+  #bold__noidung,
+  #remove__noidung,
+  #reset__noidung {
+  padding: 5px 10px;
+}
 }
 a{
   text-decoration: none;

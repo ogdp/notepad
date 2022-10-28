@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notepad</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/ogdp/notepad/main/svglogo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,12 +14,12 @@
             <div class="top__noti__notp">
                 <marquee  behavior="alternate">&emsp;&emsp;Developer font-end website Lê Quang Minh Đức&emsp;&emsp;</marquee>
             </div>
-            <h2>Chào mừng bạn đến với Notepad nhà tự trồng</h2>
+            <h2>Notepad</h2>
         </div>
         <main class="notp__content__99ks">
             <div class="notp__dieuhuong">
                 <div>
-                    <select id="slect__font" class="slect__font" name="" id="" onchange="font__family__select(this)">
+                    <select id="slect__font" class="slect__font notp__siz__poe" name="" id="" onchange="font__family__select(this)">
                         <option  value="" disabled selected>Font Family</option>
                         <option value="Arial, Helvetica, sans-serif">Arial</option>
                         <option value="Times New Roman, Times, serif">Times New Roman</option>
@@ -27,7 +28,7 @@
                     </select>
                 </div>
                 <div>
-                    <select class="slect__size" name="" id="change__size__font" onchange="size__font__select(this)">
+                    <select class="slect__size notp__siz__poe" name="" id="change__size__font" onchange="size__font__select(this)">
                         <option value="" disabled selected>Size</option>
                         <option value="14">14</option>
                         <option value="16">16</option>
@@ -47,13 +48,13 @@
                     </select>
                 </div>
                 <div>
-                    <button id="bold__noidung" onclick="bold__words()">BOLD</button>
+                    <button id="bold__noidung" class="notp__siz__poe" onclick="bold__words()">BOLD</button>
                 </div>
                 <div>
-                    <button id="reset__noidung" onclick="reset__words()">RESET</button>
+                    <button id="reset__noidung" class="notp__siz__poe" onclick="reset__words()">RESET</button>
                 </div>
                 <div>
-                    <button onclick="remove__content_words()" id="remove__noidung">REMOVE</button>
+                    <button class="notp__siz__poe" onclick="remove__content_words()" id="remove__noidung">REMOVE</button>
                 </div>
             </div>
             <div class="content">
@@ -64,7 +65,7 @@
         <footer class="notp__footer">
             <h5 style="font-size: .9rem;"> 
                 <a href="https://www.facebook.com/LeQuangMinhDuc.Profile" target="_blank" rel="noopener noreferrer">
-                    &copy; Lê Quang Minh Đức 
+                    Developers &copy; Lê Quang Minh Đức 
                 </a> | My ip: <span id="ip_client"></span> </h5>
         </footer>
     </div>
