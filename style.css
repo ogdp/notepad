@@ -78,7 +78,7 @@ small,
   padding-top: 20px;
 }
 .notp__content__99ks{
-  min-height: 72.8vh;
+  min-height: 77.8vh;
 }
 .notp__dieuhuong {
   display: flex;
@@ -146,6 +146,12 @@ small,
 .slect__font option {
   font-size: 1rem;
 }
+#notp__more--act{
+  display: none;
+  margin-top: 6px;
+  margin-left: 5px;
+  font-size: 1.3rem;
+}
 
 .content {
   width: 90%;
@@ -173,15 +179,24 @@ small,
 
 .notp__footer {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   text-align: center;
-  /* background-color: rgba(68, 59, 5, 0.911); */
   background-color: rgba(4, 8, 32, 0.952);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle{
+  width: 80%;
+  margin: auto auto;
 }
 .notp__footer h5 {
-  line-height: 50px;
   color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
   font-size: 18px;
+  word-wrap: break-word;
+  vertical-align: middle;
 }
 @media screen and (min-width: 1280px) {
   .content {
@@ -210,7 +225,19 @@ small,
   #remove__noidung,
   #reset__noidung {
   padding: 5px 10px;
-}
+  }
+  .hu__k8w{
+    display: none;
+  }
+  .hu__k8w.active{
+    display: block;
+  }
+  #slect__font{
+    display: none;
+  }
+  #notp__more--act{
+    display: block;
+  }
 }
 a{
   text-decoration: none;

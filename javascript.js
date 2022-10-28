@@ -49,7 +49,29 @@ if (localStorage.getItem("noidung") == null) {
   document.getElementById("content-words").innerHTML = value__local;
 }
 get__ip();
-function get__ip(){
-    let client__ip = document.getElementById("ip_client");
-    fetch('https://api.ipify.org/?format=json').then(results=>results.json()).then(data => client__ip.innerHTML=(data.ip));
+function get__ip() {
+  let client__ip = document.getElementById("ip_client");
+  fetch("https://api.ipify.org/?format=json")
+    .then((results) => results.json())
+    .then((data) => (client__ip.innerHTML = data.ip));
 }
+
+var click_more = document.querySelector("#notp__more--act");
+click_more.onclick = function () {
+  let cl__kij88s = document.querySelectorAll(".hu__k8w");
+  let cc__ook = document.getElementsByClassName("hu__k8w active");
+  // console.log(cl__kij88s);
+  if (cc__ook.length == 0) {
+    for (let i = 0; i < cl__kij88s.length; i++) {
+      cl__kij88s.item(i).classList.add("active");
+    }
+    let ccc = document.getElementById("slect__font");
+    ccc.style.display = "block";
+  } else if (cc__ook.length != 0) {
+    let ccc = document.getElementById("slect__font");
+    ccc.style.display = "none";
+    for (let i = 0; i < cl__kij88s.length; i++) {
+      cl__kij88s.item(i).classList.remove("active");
+    }
+  }
+};
